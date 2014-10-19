@@ -1,8 +1,13 @@
 <html>
-
+<head>
+	<link rel="stylesheet" href="css/indexStyles.css">
+	<meta charset='utf-8'>
+</head>
 <body>
-	Group 2 & Friend
-	Hello world
-	Software
+<div id="login">
+	<?php 
+		require_once('login.php');
+	?>
+<div>
 </body>
 </html>
