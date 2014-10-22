@@ -1,15 +1,15 @@
 <html>
 	<style>
 	#search {
-		width: 400px;
-		height: 25px;
+		width: 350px;
+		height: 30px;
 		display: inline;
 		margin-bottom: 15px;
 	}
 	
 	#ssearch {
 		width: 50px;
-		height: 25px;
+		height: 30px;
 		display: inline;
 		margin-bottom: 15px;
 	}
@@ -18,7 +18,7 @@
 		position:absolute;
 		left:50%;
 		top:50%;
-		margin-left: -225px;
+		margin-left: -200px;
 	}
 
 	</style>
