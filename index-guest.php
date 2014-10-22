@@ -1,9 +1,35 @@
-<?php
-	echo '<div id="center" style="width:100%; left:0px;">
-				<div style="position:absolute;top:15px;left:20px;">
+<html>
+	<style>
+	#search {
+		width: 400px;
+		height: 25px;
+		display: inline;
+		margin-bottom: 15px;
+	}
+	
+	#ssearch {
+		width: 50px;
+		height: 25px;
+		display: inline;
+		margin-bottom: 15px;
+	}
+	
+	.central{
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left: -225px;
+	}
+
+	</style>
+	<body>
+		<div id="center" style="width:100%; left:0px;">
+			<div class="central">
 				<form action="search.php" method="GET">
-					<input type="text" name="search" value="">
-					<input type="submit" name="submit_search" value="ค้นหา">
-				</form></div>
-	</div>';
-?>
+					<input id="search" type="text" name="search" value="">
+					<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
