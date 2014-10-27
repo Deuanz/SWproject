@@ -25,8 +25,8 @@
 	<body>
 		<div id="center" style="width:100%; left:0px;">
 			<div class="central">
-				<form action="search.php" method="GET">
-					<input id="search" type="text" name="search" value="">
+				<form action="index.php" method="GET">
+					<input id="search" type="text" name="data" value="">
 					<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
 				</form>
 			</div>
