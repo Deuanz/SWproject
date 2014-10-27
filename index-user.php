@@ -8,7 +8,7 @@
 	<div id="center">';
 		if(!isset($_GET['menu']))
 		{
-			echo '<h1> ยินดีต้อนรับเข้าสู่บริการฝากหมายเลขโทรกลับ <br> Welcome to call back services </h1>';
+			echo '<h1> ยินดีต้อนรับเข้าสู่ระบบ <br> Welcome to system</h1>';
 		}
 		else
 		{
