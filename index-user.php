@@ -16,6 +16,10 @@
 				{
 					include 'profile_student.php';
 				}
+				else if($_GET['menu']=="ดูรายวิชาที่สอน" or $_GET['menu']=="ดูรายวิชาที่เรียน" )
+				{
+					include 'showCourse.php';
+				}
 		}
 	echo '</div>';
 ?>

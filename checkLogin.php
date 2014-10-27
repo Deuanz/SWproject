@@ -11,7 +11,7 @@ require_once('function.php');
 		{
 			echo '<div style="text-align:center;"><font size="10" color="red">Username หรือ Password ผิดพลาด</font></div>';
 			echo '<div style="text-align:center;">กรุณารอสักคู่ระบบกำลังเข้าสู้หน้า Login</div>';
-			header( 'refresh: 7; url=index.php' );
+			header( 'refresh: 3; url=index.php' );
 		}
 		else
 		{
