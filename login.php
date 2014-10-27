@@ -12,7 +12,7 @@
 			$username = $_COOKIE['username'];
 			require_once('function.php');
 			connectDB();
-			$result  = mysql_query("SELECT * FROM user")or die("Query error : ".mysql_error());
+			$result  = mysql_query("SELECT * FROM user WHERE ID='".$username."'")or die("Query error : ".mysql_error());
 			$row = mysql_fetch_array($result);
 			if($row[4]==0)
 				$role = "Admin";

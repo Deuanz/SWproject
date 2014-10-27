@@ -16,6 +16,7 @@ require_once('function.php');
 		else
 		{
 			setcookie("username",$row[0],time()+(365*24*60*60));
+			setcookie("type",$row[4],time()+(365*24*60*60));
 			header( "location: index.php" );
 		}
 ?>
