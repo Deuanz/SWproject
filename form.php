@@ -1,7 +1,7 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></head>
 	<body>
-		<div>
+			<div>
 			มคอ.3 รายละเอียดของรายวิชา (Course Specification)
 			<div>
 				<span>ชื่อสถาบัน</span>
@@ -531,6 +531,6 @@
 
 
 		</div>
-
+		
 	</body>
 </html>
