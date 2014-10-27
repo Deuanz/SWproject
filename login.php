@@ -1,5 +1,5 @@
 <?php
-	echo '<div style="position:relative;top:15px;margin-right:20px;">';
+	echo '<div style="position:absolute;top:15px;right:20px;">';
 		if(!isset($_COOKIE['username'])){
 			echo '<form action="checkLogin.php" method="GET">
 			Username : <input type="text" name="username" value="">

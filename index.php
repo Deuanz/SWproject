@@ -9,12 +9,14 @@
 			require_once('login.php');
 		?>
 	</div>
-	<div id="left">
-		<div id="menu">
-			<?php 
-				require_once('menu.php');
-			?>
-		</div>
-	</div>
+	<?php
+		if(!isset($_COOKIE['username'])){
+			require_once('index-guest.php');
+		}
+		else
+		{
+			require_once('index-user.php');
+		}
+	?>
 </body>
 </html>
