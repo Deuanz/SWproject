@@ -2,49 +2,50 @@
 <head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></head>
 	<body>
 			<div>
-			มคอ.3 รายละเอียดของรายวิชา (Course Specification)
+			<center>มคอ.3 รายละเอียดของรายวิชา (Course Specification)</center><br>
 			<div>
-				<span>ชื่อสถาบัน</span>
+				<span>ชื่อสถาบัน</span>&nbsp;&nbsp;&nbsp;&nbsp;
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 
 			<div>
-				<span>วิทยาเขต/คณะ/ภาควิชา</span>
+				<span>วิทยาเขต/คณะ/ภาควิชา</span>&nbsp;
 				<span>
 					<input type="text" name="uname">
 				</span>
-			</div>
-			ข้อมูลทั่วไป
+			</div><br>
+			<center>ข้อมูลทั่วไป</center><br>
 			รหัสและชื่อรายวิชา
 
 			<div>
-				<span>รหัสรายวิชา :</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span>รหัสรายวิชา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 			
 			<div>
-				<span>ชื่อรายวิชาภาษาไทย :</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span>ชื่อรายวิชาภาษาไทย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 
 			<div>
-				<span>ชื่อรายวิชาภาษาอังกฤษ :</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span>ชื่อรายวิชาภาษาอังกฤษ :</span>
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 			<div>
 			จำนวนหน่วยกิต				
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div>
+			
 			หลักสูตรและประเภทของรายชิชา<br>
-			หลักสูตร		
-					<input type="text" name="uname"><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;หลักสูตร		
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div>
 			ประเภทรายวิชา
 					<input type="text" name="uname"><br>
 			อาจารย์ที่รับผิดชอบรายวิชาและอาจารย์ผู้สอน<br>
