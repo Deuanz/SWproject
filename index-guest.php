@@ -1,12 +1,42 @@
-<?php
-	echo '<div id="center" style="width:100%; left:0px;">
-				<form action="index.php" method="GET">
-					<input type="text" name="data" value="">
-					<input type="submit" name="submit_search" value="ค้นหา">
-				</form>';
-	if(isset($_GET['submit_search']))
-	{
-		include 'showData.php';
+<html>
+	<style>
+	#search {
+		width: 400px;
+		height: 25px;
+		display: inline;
+		margin-bottom: 15px;
 	}
-	echo '</div>';
-?>
+	
+	#ssearch {
+		width: 50px;
+		height: 25px;
+		display: inline;
+		margin-bottom: 15px;
+	}
+	
+	.central{
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left: -225px;
+	}
+
+	</style>
+	<body>
+		<div id="center" style="width:100%; left:0px;">
+			<div class="central">
+				<form action="search.php" method="GET">
+					<input id="search" type="text" name="search" value="">
+					<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
+				</form>
+			</div>
+			<?php
+				if(isset($_GET['submit_search']))
+				{
+					include 'showData.php';
+				}
+				echo '</div>';
+			?>
+		</div>
+	</body>
+</html>
