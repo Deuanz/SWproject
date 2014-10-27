@@ -5,7 +5,7 @@ require_once('function.php');
 		$username = $_GET['username'];
 		$password = $_GET['password'];
 		//echo "SELECT * FROM user WHERE ID='".$username."' and Password='".$password."'";
-		$result  = mysql_query("SELECT * FROM user WHERE ID='".$username."' and Password='".$password."'")or die("Query error : ".mysql_error());
+		$result  = mysql_query("SELECT * FROM user WHERE UserID='".$username."' and Password='".$password."'")or die("Query error : ".mysql_error());
 		$row = mysql_fetch_array($result);
 		if(!$row)
 		{
