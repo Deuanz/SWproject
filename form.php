@@ -2,141 +2,142 @@
 <head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></head>
 	<body>
 			<div>
-			มคอ.3 รายละเอียดของรายวิชา (Course Specification)
+			<center>มคอ.3 รายละเอียดของรายวิชา (Course Specification)</center><br>
 			<div>
-				<span>ชื่อสถาบัน</span>
+				<span>ชื่อสถาบัน</span>&nbsp;&nbsp;&nbsp;&nbsp;
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 
 			<div>
-				<span>วิทยาเขต/คณะ/ภาควิชา</span>
+				<span>วิทยาเขต/คณะ/ภาควิชา</span>&nbsp;
 				<span>
 					<input type="text" name="uname">
 				</span>
-			</div>
-			ข้อมูลทั่วไป
+			</div><br>
+			<center>ข้อมูลทั่วไป</center><br>
 			รหัสและชื่อรายวิชา
 
 			<div>
-				<span>รหัสรายวิชา :</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span>รหัสรายวิชา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 			
 			<div>
-				<span>ชื่อรายวิชาภาษาไทย :</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span>ชื่อรายวิชาภาษาไทย&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>
 				<span>
 					<input type="text" name="uname">
 				</span>
 			</div>
 
 			<div>
-				<span>ชื่อรายวิชาภาษาอังกฤษ :</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span>ชื่อรายวิชาภาษาอังกฤษ :</span>
 				<span>
 					<input type="text" name="uname">
 				</span>
-			</div>
+			</div><br>
 			<div>
 			จำนวนหน่วยกิต				
-					<input type="text" name="uname"><br>
-			หลักสูตรและประเภทของรายชิชา<br>
-			หลักสูตร		
-					<input type="text" name="uname"><br>
-			ประเภทรายวิชา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
+			
+			หลักสูตรและประเภทของรายวิชา<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;หลักสูตร		
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;ประเภทรายวิชา
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			อาจารย์ที่รับผิดชอบรายวิชาและอาจารย์ผู้สอน<br>
-			อาจารย์ผู้รับผิดชอบ	
-					<input type="text" name="uname"><br>
-			อาจารย์ผู้สอน
-					<input type="text" name="uname"><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;อาจารย์ผู้รับผิดชอบ	
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;อาจารย์ผู้สอน
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			ภาคการศึกษา/ชั้นที่เรียน
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			รายวิชาที่ต้องเรียนมาก่อน (Pre-requisite)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				รายวิชาที่ต้องเรียนพร้อมกัน (Co-requisites)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				สถานที่เรียน
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				วันที่จัดทำหรือปรับปรุงรายละเอียดของรายวิชา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
-				จุดมุ่งหมายและวัตถุประสงค์
+				<center>จุดมุ่งหมายและวัตถุประสงค์</center><br>
 
 			<div>
 				จุดมุ่งหมายของรายวิชา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				วัตถุประสงค์ของรายวิชา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				ตรรกะดิจิทัลและระบบดิจิทัล (Digital logic and digital system)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				รูปแบบการแทนข้อมูลระดับเครื่อง (Machine level representation of data)	
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				โครงสร้างของเครื่องระดับแอสเซมบลี (Assembly level machine organization)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				โครงสร้างและสถาปัตยกรรมระบบหน่วยความจำ (Memory System Organization and Architecture)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				การเชื่อมต่อและการสื่อสาร (Interfacing and Communication)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				โครงสร้างเชิงหน้าที่ (Functional organization)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				สถาปัตยกรรมหลายตัวประมวลและอื่นๆ (Multiprocessing and Alternative Architectures)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				การเพิ่มพูนสมรรถนะ (Performance enhancement)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				วัตถุประสงค์ในการพัฒนา/ปรับปรุงรายวิชา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
-			ลักษณะและการดำเนินการ
+			<center>ลักษณะและการดำเนินการ</center><br>
 			<div>
 				คำอธิบายรายวิชา (กรอกข้อมูลตามคำอธิบายรายวิชา)
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				จำนวนชั่วโมงที่ใช้ต่อภาคการศึกษา
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 			<div>
 				จำนวนชั่วโมงต่อสัปดาห์ที่อาจารย์ให้คำปรึกษาและแนะนำทางวิชาการแก่นิสิตเป็นรายบุคคล
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 
-			การพัฒนาผลการเรียนรู้ของนักศึกษา
+			<center>การพัฒนาผลการเรียนรู้ของนักศึกษา</center><br>
 			<div>
 				คุณธรรม จริยธรรม
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 
 			ผลการเรียนรู้
@@ -156,7 +157,7 @@
 						<input type="radio" name="evaluation1.1" value="present">การนำเสนอ
 						<input type="radio" name="evaluation1.1" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -175,7 +176,7 @@
 						<input type="radio" name="evaluation1.2" value="present">การนำเสนอ
 						<input type="radio" name="evaluation1.2" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -196,9 +197,9 @@
 			<div>รายละเอียด (ถ้ามี)</div>
 			<div><input type="text" name="uname"><br></div>
 
-			<div>
+			<br><div>
 				ความรู้
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 
 			ผลการเรียนรู้
@@ -218,7 +219,7 @@
 						<input type="radio" name="evaluation2.1" value="present">การนำเสนอ
 						<input type="radio" name="evaluation2.1" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -239,10 +240,9 @@
 			<div>รายละเอียด (ถ้ามี)</div>
 			<div><input type="text" name="uname"><br></div>
 
-			<div>
+			<br><div>
 				ทักษะทางปัญญา
-					<input type="text" name="uname"><br>
-			</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -261,7 +261,7 @@
 						<input type="radio" name="evaluation3.3" value="present">การนำเสนอ
 						<input type="radio" name="evaluation3.3" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -280,7 +280,7 @@
 						<input type="radio" name="evaluation3.5" value="present">การนำเสนอ
 						<input type="radio" name="evaluation3.5" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -299,11 +299,11 @@
 						<input type="radio" name="evaluation3.6" value="present">การนำเสนอ
 						<input type="radio" name="evaluation3.6" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			<div>
 				ทักษะความสัมพันธ์ระหว่างบุคคลและความรับผิดชอบ
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 
 			ผลการเรียนรู้
@@ -323,7 +323,7 @@
 						<input type="radio" name="evaluation4.2" value="present">การนำเสนอ
 						<input type="radio" name="evaluation4.2" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -342,7 +342,7 @@
 						<input type="radio" name="evaluation4.3" value="present">การนำเสนอ
 						<input type="radio" name="evaluation4.3" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -361,11 +361,11 @@
 						<input type="radio" name="evaluation4.5" value="present">การนำเสนอ
 						<input type="radio" name="evaluation4.5" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			<div>
 				ทักษะการวิเคราะห์เชิงตัวเลข การสื่อสาร และการใช้เทคโนโลยีสารสนเทศ
-					<input type="text" name="uname"><br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			</div>
 
 			ผลการเรียนรู้
@@ -385,7 +385,7 @@
 						<input type="radio" name="evaluation5.1" value="present">การนำเสนอ
 						<input type="radio" name="evaluation5.1" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -404,7 +404,7 @@
 						<input type="radio" name="evaluation5.2" value="present">การนำเสนอ
 						<input type="radio" name="evaluation5.2" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -423,7 +423,7 @@
 						<input type="radio" name="evaluation5.3" value="present">การนำเสนอ
 						<input type="radio" name="evaluation5.3" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -442,7 +442,7 @@
 						<input type="radio" name="evaluation5.4" value="present">การนำเสนอ
 						<input type="radio" name="evaluation5.4" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -461,7 +461,7 @@
 						<input type="radio" name="evaluation5.5" value="present">การนำเสนอ
 						<input type="radio" name="evaluation5.5" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
 			ผลการเรียนรู้
 			<div>
@@ -480,54 +480,54 @@
 						<input type="radio" name="evaluation5.6" value="present">การนำเสนอ
 						<input type="radio" name="evaluation5.6" value="describe">อื่นๆ(ระบุ)</span>
 			<div>รายละเอียด (ถ้ามี)</div>
-			<div><input type="text" name="uname"><br></div>
+			<div><input type="text" name="uname"><br></div><br>
 
-			<div>แผนการสอนและการประเมินผล</div>
+			<center><div>แผนการสอนและการประเมินผล</div></center>
 			<div>แผนการสอน</div>
 			<div>สัปดาห์ที่</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>หัวข้อ/รายละเอียด</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>จำนวนชั่วโมงบรรยาย</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>จำนวนชั่วโมงปฏิบัติการ</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>จำนวนชั่วโมงศึกษาด้วยตนเอง</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>กิจกรรม/สื่อที่ใช้</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>ผู้สอน</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 
 			<div>แผนการประเมินผลการเรียนรู้</div>
 			<div>ผลการเรียนรู้</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>วิธีการประเมินผลการศึกษา</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>สัปดาห์ที่ประเมิน</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>สัดส่วนการประเมินผล</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 
-			<div>ทรัพยากรประกอบการเรียนการสอน</div>
+			<center><div>ทรัพยากรประกอบการเรียนการสอน</div></center><br>
 			<div>1.ตำราและเอกสารหลัก</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>2.เอกสารและข้อมูลสำคัญ</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>3.เอกสารและข้อมูลแนะนำ</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 
-			<div>การประเมินและปรับปรุงการดำเนินการของรายวิชา</div>
+			<center><div>การประเมินและปรับปรุงการดำเนินการของรายวิชา</div></center><br>
 			<div>กลยุทธ์การประเมินประสิทธิผลของรายวิชาโดยนักศึกษา</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>กลยุทธ์การประเมินการสอน</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>การปรับปรุงการสอน</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>การทวนสอบมาตรฐานผลสัมฤทธิ์ของนิสิตในรายวิชา</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 			<div>การดำเนินการทบทวนและการวางแผนปรับปรุงประสิทธิผลของรายวิชา</div>
-			<div><input type="text" name="uname"><br></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uname"><br></div><br>
 
 
 		</div>
