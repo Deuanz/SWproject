@@ -1,4 +1,11 @@
 <?php
+	if(isset($_GET['submit_search']))
+	{
+		echo '<div style="position:absolute;top:15px;left:20px;"><form action="index.php" method="GET">
+						<input id="search" type="text" name="data" value="">
+						<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
+					</form></div>';
+	}
 	echo '<div style="position:absolute;top:15px;right:20px;">';
 		if(!isset($_COOKIE['username'])){
 			echo '<form action="checkLogin.php" method="GET">
