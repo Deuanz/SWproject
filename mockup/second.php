@@ -7,7 +7,7 @@
 	<body>
 		<nav id="nav-top">
 			<?php require_once('login.php'); ?>
-			<span style="display:inline-block; margin:10"><img src = "..\image\logo2-mini.png"></span>
+			<span style="display:inline-block; margin:5"><img src = "..\image\logo2-mini.png"></span>
 		</nav>
 		<div align="center" style="margin-top:95px">
 			<?php require_once('search.php'); ?>
