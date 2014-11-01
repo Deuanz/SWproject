@@ -20,7 +20,7 @@
 
 	</head>	
 	<body>
-		<form action="index.php" method="GET">
+		<form action="second.php" method="GET">
 			<input id="search" type="text" name="data" value="">
 			<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
 		</form>
