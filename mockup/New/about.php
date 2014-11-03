@@ -7,7 +7,7 @@
 		margin: 15px;
 		padding: 0 20px;
 		float: left;
-		border-radius: 5px;
+		border-radius: 15px;
 		border: 3px dashed #333;
 		width: 580px;
 		height: 135px;
