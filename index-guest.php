@@ -13,26 +13,26 @@
 		display: inline;
 		margin-bottom: 15px;
 	}
-	
-	.central{
-		position:absolute;
-		left:50%;
-		top:50%;
-		margin-left: -200px;
-	}
 
 	</style>
 	<body>
+
 		<div id="center" style="width:100%; left:0px;">
 			<?php
 			if(!isset($_GET['submit_search']))
 			{
 			?>
-				<div class="central">
-					<form action="index.php" method="GET">
-						<input id="search" type="text" name="data" value="">
-						<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
-					</form>
+				<div style="margin:120 auto;">
+					<div align="center">
+						<img src = "image\logo2.png"> 
+					</div>
+
+					<div  align="center">
+						<form action="index.php" method="GET">
+							<input id="search" type="text" name="data" value="">
+							<input id="ssearch" type="submit" name="submit_search" value="ค้นหา">
+						</form>
+					</div>
 				</div>
 			<?php
 			}
