@@ -19,12 +19,18 @@
 	<body>
 		<div id="login-rigth">
 			<span>
+				<form action="logout.php" method="GET">
 				<span style="display:inline-block">
-
 					<div>
+						<?php
+							$username = $_COOKIE['username'];
+							require_once('function.php');
+							connectDB();
+							$result  = mysql_query("SELECT * FROM user_view WHERE Username='".$username."'")or die("Query error : ".mysql_error());
+							$row = mysql_fetch_array($result);
+						?>
 						<font size=2 color="#fff">
-							<div  align="right"> Student 54360230 </div>
-							<b>Rattanawadi Niothong</b>
+							<b><?php echo $row['Username'].'   '.$row['Fname'].'  '.$row['Lname'] ?></b>
 						</font>
 					</div>
 
@@ -33,6 +39,7 @@
 				<span>
 					<input id="btn-login" type="submit" name="submit" value="logout">
 				</span>
+				</form>
 			</span>
 		</div>
 	</body>
