@@ -1,0 +1,17 @@
+#nav-top{
+	background-color:#ff7260;
+	width:100%;
+	height:auto;
+	position:fixed;
+	left:0px;
+	top:0px;
+	font-family: sans-serif;
+	line-height: 1;
+}
+
+.shadow {
+	border:1px solid #999999;
+	-moz-box-shadow: 3px 3px 3px #ccc;
+	-webkit-box-shadow: 3px 3px 3px #ccc;
+	box-shadow: 3px 3px 3px #ccc;
+}
