@@ -25,7 +25,6 @@
 	                	<form method="GET">
 	        				<input name="btn1" class="btn-slide-bar" type="submit" value="ระเบียนประวัติ">
                         	<input name="btn2" class="btn-slide-bar" type="submit" value="รายวิชาลงทะเบียน">
-                        	<button name="btn3" class="btn-slide-bar" type="button">ออกจากระบบ</button>
                         </form>
 	                    </div>
 	                    

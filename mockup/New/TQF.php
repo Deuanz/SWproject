@@ -1,29 +1,32 @@
 <meta charset='utf-8'>
 <?php
-	require_once('function.php');
-	connectDB();
-	$result  = mysql_query("SELECT * FROM tqf3_view WHERE CourseID=".$_GET["CourseID"]." and Section=".$_GET["Section"]." and Curriculum='".$_GET["Curriculum"]."' and Department='".$_GET["Department"]."' and Faculty='".$_GET["Faculty"]."' and Campus='".$_GET["Campus"]."' and University='".$_GET["University"]."'")or die("Query error : ".mysql_error());
-	$row = mysql_fetch_array($result);
-	if($row)
+	if(!isset($_GET['SID']))
 	{
-		// get the files details 
-		$size = $row['Size'];
-		$type = $row['Type'];
-		$content = $row['TQF3'];
+		require_once('function.php');
+		connectDB();
+		$result  = mysql_query("SELECT * FROM tqf3_view WHERE CourseID=".$_GET["CourseID"]." and Section=".$_GET["Section"]." and Curriculum='".$_GET["Curriculum"]."' and Department='".$_GET["Department"]."' and Faculty='".$_GET["Faculty"]."' and Campus='".$_GET["Campus"]."' and University='".$_GET["University"]."'")or die("Query error : ".mysql_error());
+		$row = mysql_fetch_array($result);
+		if($row)
+		{
+			// get the files details 
+			$size = $row['Size'];
+			$type = $row['Type'];
+			$content = $row['TQF3'];
 
-		//present file for download 
-		header('Content-length: '.$size.'"'); 
-		header('Content-type: '.$type.'"'); 
-		header('Content-Disposition: attachment; name="'.$_GET["CourseID"].'_TQF3.pdf"'); 
-		echo $content; 
-		exit; 
+			//present file for download 
+			header('Content-length: '.$size.'"'); 
+			header('Content-type: '.$type.'"'); 
+			header('Content-Disposition: attachment; name="'.$_GET["CourseID"].'_TQF3.pdf"'); 
+			echo $content; 
+			exit; 
+		}
 	}
 	else
 	{
 ?>
 
 <br><div align="center">
-	<form method="post" enctype="multipart/form-data" action="addTQF.php">
+	<form method="post" enctype="multipart/form-data" action="addTQF.php?SID=<?php echo $_GET['SID']; ?>">
 		<table width="350" border="0" cellpadding="1"
 		cellspacing="1" class="box">
 		<tr>

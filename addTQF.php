@@ -18,9 +18,11 @@
 		}
 		require_once('function.php');
 		connectDB();
-		$query = "UPDATE tqf3 SET Pdf='".$content."', size='".$fileSize."', type='".$fileType."', name='".$fileName."' WHERE ID='1'";
-		mysql_query($query) or die('Error, query failed'); 
-		mysql_close();
+		echo $query = "UPDATE tqf3 SET Pdf='".$content."', size='".$fileSize."', type='".$fileType."', name='".$fileName."' WHERE ID='".$_POST['SID']."'";
+		//echo $query;
+		echo '<br>';
+		//mysql_query($query) or die('Error, query failed'); 
+		//mysql_close();
 		echo "<br>File $fileName uploaded<br>";
 	}
 ?>

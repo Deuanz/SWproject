@@ -5,11 +5,10 @@
 		<?php require_once('navbar.php'); ?>
 	</head>
 	<body>
-		<?php $isLogin = false ?>
 		<nav id="nav-top" class="shadow">
 			<span style="display:inline-block; margin:5"><img src = "..\..\image\logo2-mini.png"></span>
 			<?php 
-				if($isLogin){
+				if(isset($_COOKIE['username'])){
 					require_once('logedin.php');
 				}
 				else{
@@ -23,10 +22,11 @@
 				<tr>
 					<td valign="top">
 	                	<div id="left">
-	        				<button class="btn-slide-bar" type="button">ระเบียนประวัติ</button>
-                        	<button class="btn-slide-bar" type="button">รายวิชาที่สอน</button>
-                        	<button class="btn-slide-bar" type="button">เพิ่มรายวิชา</button>
-                        	<button class="btn-slide-bar" type="button">ออกจากระบบ</button>
+							<form method="GET">
+								<input name="profile" class="btn-slide-bar" type="submit" value="ระเบียนประวัติ">
+								<input name="course" class="btn-slide-bar" type="submit" value="รายวิชาที่สอน">
+								<button class="btn-slide-bar" type="button">เพิ่ม มคอ.</button>
+							</form>
 	                    </div>
 	                    
 	                </td>
@@ -37,7 +37,18 @@
 	                <td>
 	                	<div id="right">
 	                    	<div id="wrap">
-	                    		<div align="center" style="width:80%">เนื้อหา</div>
+	                    		<div align="center" style="width:80%">
+									<?php
+	                    				if(isset($_GET['profile']))
+	                    				{
+	                    					//include 'showCourse.php';
+	                    				}
+	                    				else if(isset($_GET['course']))
+	                    				{
+	                    					include 'showCourse.php';
+	                    				}
+	                    			?>
+								</div>
 	                        </div>
 			            </div>
 	                   
