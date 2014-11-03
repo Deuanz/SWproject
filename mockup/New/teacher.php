@@ -25,6 +25,7 @@
 	                	<div id="left">
 	        				<button class="btn-slide-bar" type="button">ระเบียนประวัติ</button>
                         	<button class="btn-slide-bar" type="button">รายวิชาที่สอน</button>
+                        	<button class="btn-slide-bar" type="button">เพิ่มรายวิชา</button>
                         	<button class="btn-slide-bar" type="button">ออกจากระบบ</button>
 	                    </div>
 	                    
