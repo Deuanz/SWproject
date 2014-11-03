@@ -10,130 +10,62 @@
 	</head>
 
 	<body>
+	<?php
+		require_once('function.php');
+		connectDB();
+		$result  = mysql_query("SELECT * FROM tqf3_view WHERE (CourseID LIKE '%".$_GET['data']."%') or (CourseName LIKE '%".$_GET['data']."%') or (Section LIKE '%".$_GET['data']."%') or (Semester LIKE '%".$_GET['data']."%') or (Curriculum LIKE '%".$_GET['data']."%') or (Department LIKE '%".$_GET['data']."%') or (Faculty LIKE '%".$_GET['data']."%') or (Campus LIKE '%".$_GET['data']."%') or (University LIKE '%".$_GET['data']."%')")or die("Query error : ".mysql_error());
+		$row = mysql_fetch_array($result);
+		if(!$row)
+		{
+			echo '<h1>ไม่มีข้อมูลที่ท่านต้องการ</h1>';
+		}
+		else
+		{
+	?>
 		<table style="border-collapse: collapse">
 			<tr style="background:#999999; border:1px solid #000000;">
 				<td align = "center"><b>รหัสวิชา</b></td>
 				<td align = "center"><b>ชื่อวิชา</b></td>
 				<td align = "center"><b>กลุ่มเรียน</b></td>
-				<td align = "center"><b>หน่วยกิจ</b></td>
 				<td align = "center"><b>ภาคการศึกษา</b></td>
 				<td align = "center"><b>หลักสูตร</b></td>
-				<td align = "center"><b>สาขาวิชา</b></td>
+				<td align = "center"><b>ภาควิชา</b></td>
 				<td align = "center"><b>คณะ</b></td>
 				<td align = "center"><b>มหาวิทยาลัย</b></td>
-			</tr>
-
-			<tr>
-				<td>000001 </td>
-				<td> คอมพิวเตอร์ขั้นพื้นฐาน  </td>
-				<td align = "right"> 1 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 1/2557 </td>
-				<td> 00000000051 </td>
-				<td> คอมพิวเตอร์ </td>
-				<td> วิศวกรรมศาสตร์ </td>
-				<td> มหาวิทยาลัยนเรศวร (พิษณุโลก) </td>
+				<td align = "center"><b>Download</b></td>
 			</tr>
 			<tr>
-				<td>000001 </td>
-				<td> คอมพิวเตอร์ขั้นพื้นฐาน  </td>
-				<td align = "right"> 2 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 1/2557 </td>
-				<td> 00000000051 </td>
-				<td> คอมพิวเตอร์ </td>
-				<td> วิศวกรรมศาสตร์ </td>
-				<td> มหาวิทยาลัยนเรศวร (พิษณุโลก) </td>
+				<td><?php echo $row['CourseID']; ?> </td>
+				<td> <?php echo $row['CourseName']; ?>  </td>
+				<td align = "right"> <?php echo $row['Section']; ?> </td>
+				<td align = "right"> <?php echo $row['Semester']; ?> </td>
+				<td> <?php echo $row['Curriculum']; ?> </td>
+				<td> <?php echo $row['Department']; ?> </td>
+				<td> <?php echo $row['Faculty']; ?> </td>
+				<td> <?php echo $row['University']; ?> (<?php echo $row['Campus']; ?>) </td>
+				<td> <?php
+				if(isset($row['TQF3']))
+				{
+					echo '<a href="TQF.php?CourseID='.$row["CourseID"].'&Section='.$row["Section"].'&Semester='.$row["Semester"].'&Curriculum='.$row["Curriculum"].'&Department='.$row["Department"].'&Faculty='.$row["Faculty"].'&Campus='.$row["Campus"].'&University='.$row["University"].'">Download</a></td>';
+				}
+				?>
 			</tr>
+		<?php
+		while($row = mysql_fetch_array($result))
+		{
+		?>
 			<tr>
-				<td>000002 </td>
-				<td> คอมพิวเตอร์ขั้นสูง  </td>
-				<td align = "right"> 1 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 2/2557 </td>
-				<td> 00000000051 </td>
-				<td> คอมพิวเตอร์ </td>
-				<td> วิศวกรรมศาสตร์ </td>
-				<td> มหาวิทยาลัยนเรศวร (พิษณุโลก) </td>
+				<td><?php echo $row['CourseID']; ?> </td>
+				<td> <?php echo $row['CourseName']; ?>  </td>
+				<td align = "right"> <?php echo $row['Section']; ?> </td>
+				<td align = "right"> <?php echo $row['Semester']; ?> </td>
+				<td> <?php echo $row['Curriculum']; ?> </td>
+				<td> <?php echo $row['Department']; ?> </td>
+				<td> <?php echo $row['Faculty']; ?> </td>
+				<td> <?php echo $row['University']; ?> (<?php echo $row['Campus']; ?>) </td>
 			</tr>
-			<tr>
-				<td>111118 </td>
-				<td> แคลคูลัส 1  </td>
-				<td align = "right"> 1 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 1/2557 </td>
-				<td> 00000000051 </td>
-				<td> คณิตศาสตร์  </td>
-				<td> วิทยาศาสตร์ </td>
-				<td> จุฬาลงกรณ์มหาวิทยาลัย (กรุงเทพ) </td>
-			</tr>
-			<tr>
-				<td>252525 </td>
-				<td> ภาษาอังกฤษเพื่อการสื่อสาร  </td>
-				<td align = "right"> 4 </td>
-				<td> 3(3-2-2) </td>
-				<td align = "right"> 1/2556 </td>
-				<td> 00000000051 </td>
-				<td> ภาษาอังกฤษ  </td>
-				<td> มนุษยศาสตร์ </td>
-				<td> มหาวิทยาลัยธรรมศาสตร์ (ท่าพระจันทร์) </td>
-			</tr>
-			<tr>
-				<td>000001 </td>
-				<td> คอมพิวเตอร์ขั้นพื้นฐาน  </td>
-				<td align = "right"> 1 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 1/2557 </td>
-				<td> 00000000051 </td>
-				<td> คอมพิวเตอร์ </td>
-				<td> วิศวกรรมศาสตร์ </td>
-				<td> มหาวิทยาลัยนเรศวร (พิษณุโลก) </td>
-			</tr>
-			<tr>
-				<td>000001 </td>
-				<td> คอมพิวเตอร์ขั้นพื้นฐาน  </td>
-				<td align = "right"> 2 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 1/2557 </td>
-				<td> 00000000051 </td>
-				<td> คอมพิวเตอร์ </td>
-				<td> วิศวกรรมศาสตร์ </td>
-				<td> มหาวิทยาลัยนเรศวร (พิษณุโลก) </td>
-			</tr>
-			<tr>
-				<td>000002 </td>
-				<td> คอมพิวเตอร์ขั้นสูง  </td>
-				<td align = "right"> 1 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 2/2557 </td>
-				<td> 00000000051 </td>
-				<td> คอมพิวเตอร์ </td>
-				<td> วิศวกรรมศาสตร์ </td>
-				<td> มหาวิทยาลัยนเรศวร (พิษณุโลก) </td>
-			</tr>
-			<tr>
-				<td>111118 </td>
-				<td> แคลคูลัส 1  </td>
-				<td align = "right"> 1 </td>
-				<td> 3(3-0-0) </td>
-				<td align = "right"> 1/2557 </td>
-				<td> 00000000051 </td>
-				<td> คณิตศาสตร์  </td>
-				<td> วิทยาศาสตร์ </td>
-				<td> จุฬาลงกรณ์มหาวิทยาลัย (กรุงเทพ) </td>
-			</tr>
-			<tr>
-				<td>252525 </td>
-				<td> ภาษาอังกฤษเพื่อการสื่อสาร  </td>
-				<td align = "right"> 4 </td>
-				<td> 3(3-2-2) </td>
-				<td align = "right"> 1/2556 </td>
-				<td> 00000000051 </td>
-				<td> ภาษาอังกฤษ  </td>
-				<td> มนุษยศาสตร์ </td>
-				<td> มหาวิทยาลัยธรรมศาสตร์ (ท่าพระจันทร์) </td>
-			</tr>
-
+		<?php } ?>
 		</table>
+		<?php } ?>
 	</body>
 </html>

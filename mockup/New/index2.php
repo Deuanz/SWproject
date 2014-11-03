@@ -4,12 +4,10 @@
 		<link rel="stylesheet" href="css/styleSheet.css">
 	</head>
 	<body>
-
-		<?php $isLogin = true ?>
 		<nav id="nav-top" class="shadow">
 			<span style="display:inline-block; margin:5"><img src = "..\..\image\logo2-mini.png"></span>
 			<?php 
-				if($isLogin){
+				if(isset($_COOKIE['username'])){
 					require_once('logedin.php');
 				}
 				else{

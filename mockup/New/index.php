@@ -4,10 +4,9 @@
 		<link rel="stylesheet" href="css/styleSheet.css">
 	</head>
 	<body>
-		<?php $isLogin = false ?>
 		<nav id="nav-top" class="shadow">
 			<?php 
-				if($isLogin){
+				if(isset($_COOKIE['username'])){
 					require_once('logedin.php');
 				}
 				else{
