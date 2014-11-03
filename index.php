@@ -6,16 +6,16 @@
 <body>
 	<div id="login">
 		<?php 
-			require_once('login.php');
+			include 'login.php';
 		?>
 	</div>
 	<?php
 		if(!isset($_COOKIE['username'])){
-			require_once('index-guest.php');
+			include 'index-guest.php';
 		}
 		else
 		{
-			require_once('index-user.php');
+			include 'index-user.php';
 		}
 	?>
 </body>

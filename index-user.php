@@ -18,7 +18,14 @@
 				}
 				else if($_GET['menu']=="ดูรายวิชาที่สอน" or $_GET['menu']=="ดูรายวิชาที่เรียน" )
 				{
-					include 'showCourse.php';
+					if(isset($_GET['clickData']))
+					{
+						include 'TQF.php';
+					}
+					else
+					{
+						include 'showCourse.php';
+					}
 				}
 		}
 	echo '</div>';
