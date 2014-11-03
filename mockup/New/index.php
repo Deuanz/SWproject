@@ -11,7 +11,6 @@
 				}
 				else{
 					require_once('login.php');
-				}
 			?>
 		</nav>
 
@@ -26,5 +25,8 @@
 				</div>
 			</div>
 		</div>
+			<?php
+			}
+			?>
 	</body>
 </html>
