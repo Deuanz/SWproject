@@ -5,7 +5,7 @@
 		<?php require_once('navbar.php'); ?>
 	</head>
 	<body>
-		<?php $isLogin = false ?>
+		<?php $isLogin = true ?>
 		<nav id="nav-top" class="shadow">
 			<span style="display:inline-block; margin:5"><img src = "..\..\image\logo2-mini.png"></span>
 			<?php 
