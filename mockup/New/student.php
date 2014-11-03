@@ -17,15 +17,16 @@
 				}
 			?>
 		</nav>
-
 		<div id="contrainer">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<td valign="top">
 	                	<div id="left">
-	        				<button class="btn-slide-bar" type="button">ระเบียนประวัติ</button>
-                        	<button class="btn-slide-bar" type="button">รายวิชาลงทะเบียน</button>
-                        	<button class="btn-slide-bar" type="button">ออกจากระบบ</button>
+	                	<form method="GET">
+	        				<input name="btn1" class="btn-slide-bar" type="submit" value="ระเบียนประวัติ">
+                        	<input name="btn2" class="btn-slide-bar" type="submit" value="รายวิชาลงทะเบียน">
+                        	<button name="btn3" class="btn-slide-bar" type="button">ออกจากระบบ</button>
+                        </form>
 	                    </div>
 	                    
 	                </td>
@@ -36,7 +37,18 @@
 	                <td>
 	                	<div id="right">
 	                    	<div id="wrap">
-	                    		<div align="center" style="width:80%">เนื้อหา</div>
+	                    		<div align="center" style="width:80%">
+	                    			<?php
+	                    				if(isset($_GET['btn1']))
+	                    				{
+	                    					echo "iDeuanz";
+	                    				}
+	                    				else if(isset($_GET['btn2']))
+	                    				{
+	                    					include "subject_registed.php";
+	                    				}
+	                    			?>
+	                    		</div>
 	                        </div>
 			            </div>
 	                   
