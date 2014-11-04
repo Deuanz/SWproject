@@ -17,7 +17,14 @@
 		<nav id="nav-top" class="shadow">
 			<?php 
 				if(isset($_COOKIE['username'])){
-					require_once('logedin.php');
+					if($_COOKIE['role']=='0')
+					{
+						header( "location: teacher.php" );
+					}
+					else
+					{
+						header( "location: student.php" );
+					}
 				}
 				else{
 					require_once('login.php');

@@ -50,7 +50,7 @@
 				}
 				else
 				{
-					echo 'aaa';
+					echo 'ไม่มี';
 				}
 				?>
 				</td>
@@ -80,8 +80,8 @@
 					?>
 				</td>
 			</tr>
-		<?php } ?>
+	<?php } ?>
 		</table>
-		<?php } ?>
+<?php } ?>
 	</body>
 </html>
