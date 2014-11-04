@@ -25,7 +25,6 @@
 							<form method="GET">
 								<input name="profile" class="btn-slide-bar" type="submit" value="ระเบียนประวัติ">
 								<input name="course" class="btn-slide-bar" type="submit" value="รายวิชาที่สอน">
-								<button class="btn-slide-bar" type="button">เพิ่ม มคอ.</button>
 							</form>
 	                    </div>
 	                    
@@ -41,7 +40,7 @@
 									<?php
 	                    				if(isset($_GET['profile']))
 	                    				{
-	                    					//include 'showCourse.php';
+	                    					include 'student_profile.php';
 	                    				}
 	                    				else if(isset($_GET['course']))
 	                    				{
