@@ -40,7 +40,7 @@
 	                    			<?php
 	                    				if(isset($_GET['btn1']))
 	                    				{
-	                    					echo "iDeuanz";
+	                    					include "student_profile.php";
 	                    				}
 	                    				else if(isset($_GET['btn2']))
 	                    				{
