@@ -34,11 +34,15 @@
 			<td align = "center">';
 				if($row['TQF3']!="")
 				{
-					echo '<a href="TQF.php?CourseID='.$row["CourseID"].'&Section='.$row["Section"].'&Semester='.$row["Semester"].'&Curriculum='.$row["Curriculum"].'&Department='.$row["Department"].'&Faculty='.$row["Faculty"].'&Campus='.$row["Campus"].'&University='.$row["University"].'">Download</a>';
+					echo '<a href="TQF.php?SID='.$row["SID"].'">Download</a>';
 				}
 				else
 				{
-					echo 'ไม่มี มคอ.';
+				?>
+					<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
+							<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
+					</form>
+				<?php
 				}
 			echo '</td>
 			</tr>';
@@ -52,11 +56,15 @@
 					<td align = "center">';
 						if($row['TQF3']!="")
 						{
-							echo '<a href="TQF.php?CourseID='.$row["CourseID"].'&Section='.$row["Section"].'&Semester='.$row["Semester"].'&Curriculum='.$row["Curriculum"].'&Department='.$row["Department"].'&Faculty='.$row["Faculty"].'&Campus='.$row["Campus"].'&University='.$row["University"].'">Download</a>';
+							echo '<a href="TQF.php?SID='.$row["SID"].'">Download</a>';
 						}
 						else
 						{
-							echo '<a href="TQF.php?SID='.$row["SID"].'">เพิ่ม มคอ.</a>';
+						?>
+							<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
+							<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
+					</form>
+						<?php
 						}
 					echo '</td>
 					</tr>';

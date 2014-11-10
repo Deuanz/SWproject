@@ -1,10 +1,10 @@
 <meta charset='utf-8'>
 <?php
-	if(!isset($_GET['SID']))
+	if(!isset($_GET['TQF']))
 	{
 		require_once('function.php');
 		connectDB();
-		$result  = mysql_query("SELECT * FROM tqf3_view WHERE CourseID=".$_GET["CourseID"]." and Section=".$_GET["Section"]." and Curriculum='".$_GET["Curriculum"]."' and Department='".$_GET["Department"]."' and Faculty='".$_GET["Faculty"]."' and Campus='".$_GET["Campus"]."' and University='".$_GET["University"]."'")or die("Query error : ".mysql_error());
+		$result  = mysql_query("SELECT * FROM tqf3_view WHERE SID='".$_GET['SID']."'")or die("Query error : ".mysql_error());
 		$row = mysql_fetch_array($result);
 		if($row)
 		{
@@ -12,13 +12,18 @@
 			$size = $row['Size'];
 			$type = $row['Type'];
 			$content = $row['TQF3'];
-
+			
 			//present file for download 
-			header('Content-length: '.$size.'"'); 
-			header('Content-type: '.$type.'"'); 
-			header('Content-Disposition: attachment; name="'.$_GET["CourseID"].'_TQF3.pdf"'); 
-			echo $content; 
-			exit; 
+			// header('Content-length: '.$size.'"'); 
+			// header('Content-type: '.$type.'"'); 
+			// header('Content-Disposition: attachment; name="'.$_GET["CourseID"].'_TQF3.pdf"'); 
+			// echo $content; 
+			// exit;
+
+			//present file for view
+?>
+			<embed width='100%' height='100%' name='plugin' src='data:application/pdf;base64,<?php echo base64_encode($content); ?>' type="application/pdf" style="position:absolute; top:0px; left:0px;">
+<?php
 		}
 	}
 	else

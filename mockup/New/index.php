@@ -21,9 +21,13 @@
 					{
 						header( "location: teacher.php" );
 					}
-					else
+					else if($_COOKIE['role']=='1')
 					{
 						header( "location: student.php" );
+					}
+					else
+					{
+						header( "location: admin.php" );
 					}
 				}
 				else{
