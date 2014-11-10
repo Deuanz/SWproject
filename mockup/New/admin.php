@@ -7,7 +7,7 @@
 	<body>
 		<?php $isLogin = false ?>
 		<nav id="nav-top" class="shadow">
-			<span style="display:inline-block; margin:5"><img src = "..\..\image\logo2-mini.png"></span>
+			<span style="display:inline-block; margin:5"><a href="about.php"><img src = "..\..\image\logo2-mini.png"></a></span>
 			<?php 
 				if($isLogin){
 					require_once('logedin.php');

@@ -16,7 +16,7 @@
 			
 	</table>
 	<?php
-	require_once('function.php');
+					require_once('function.php');
 					connectDB();
 					if($_COOKIE['role']=="0")
 					{

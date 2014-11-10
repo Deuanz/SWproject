@@ -7,7 +7,7 @@
 	<body>
 		<?php $isLogin = true ?>
 		<nav id="nav-top" class="shadow">
-			<span style="display:inline-block; margin:5"><img src = "..\..\image\logo2-mini.png"></span>
+			<span style="display:inline-block; margin:5"><a href="about.php"><img src = "..\..\image\logo2-mini.png"></a></span>
 			<?php 
 				if($isLogin){
 					require_once('logedin.php');
@@ -38,7 +38,7 @@
 	                    	<div id="wrap">
 	                    		<div align="center" style="width:80%">
 	                    			<?php
-	                    				if(isset($_GET['btn1']))
+	                    				if(isset($_GET['profile']))
 	                    				{
 	                    					include "student_profile.php";
 	                    				}

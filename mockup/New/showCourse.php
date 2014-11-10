@@ -27,8 +27,11 @@
 			<td align = "center"><b>ชื่อวิชา</b></td>
 			<td align = "center"><b>กลุ่มที่</b></td>
 			<td align = "center" class="unsortable"><b>มคอ.</b></td>
+			<?php if($_COOKIE['role']=="0")
+			{
+					echo '<td align = "center" class="unsortable"><b>เพิ่ม มคอ.</b></td>';
+			}?>
 			</tr>
-			
 			<tr>
 			<td align = "center"><?php echo $row['CourseID']; ?></a></td>
 			<td align = "center"><?php echo $row['CourseName']; ?></a></td>
@@ -45,6 +48,14 @@
 					<img src="img/no_tqf3_icon.png">
 				<?php } ?>
 			</td>
+			<?php if($_COOKIE['role']=="0")
+			{ ?>
+					<td align = "center">
+						<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
+								<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
+						</form>
+					</td>	
+			<?php } ?>
 			</tr>
 			<?php
 			while($row = mysql_fetch_array($result))
@@ -62,7 +73,16 @@
 						{
 						?>
 							<img src="img/no_tqf3_icon.png">
-						<?php } 
+						<?php } ?>
+					</td>
+					<?php if($_COOKIE['role']=="0")
+					{ ?>
+							<td align = "center">
+								<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
+										<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
+								</form>
+							</td>	
+					<?php } 
 					echo '</td>
 					</tr>';
 			}
