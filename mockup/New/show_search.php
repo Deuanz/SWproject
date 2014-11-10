@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
+		<script type="text/javascript" src="css/sortable.js"></script>
 		<style>
 			table, td, th {
 	    		border: 1px solid black;
@@ -22,9 +23,9 @@
 		else
 		{
 	?>
-		<table style="border-collapse: collapse">
+		<table class="sortable" id="anyid" style="border-collapse: collapse">
 			<tr style="background:#999999; border:1px solid #000000;">
-				<td align = "center"><b>รหัสวิชา</b></td>
+				<td align = "center" width="80px"><b>รหัสวิชา</b></td>
 				<td align = "center"><b>ชื่อวิชา</b></td>
 				<td align = "center"><b>กลุ่มเรียน</b></td>
 				<td align = "center"><b>ภาคการศึกษา</b></td>
@@ -32,7 +33,7 @@
 				<td align = "center"><b>ภาควิชา</b></td>
 				<td align = "center"><b>คณะ</b></td>
 				<td align = "center"><b>มหาวิทยาลัย</b></td>
-				<td align = "center"><b>Download มคอ.</b></td>
+				<td align = "center" class="unsortable"><b>เปิดดู</b></td>
 			</tr>
 			<tr>
 				<td><?php echo $row['CourseID']; ?> </td>
@@ -43,14 +44,14 @@
 				<td> <?php echo $row['Department']; ?> </td>
 				<td> <?php echo $row['Faculty']; ?> </td>
 				<td> <?php echo $row['University']; ?> (<?php echo $row['Campus']; ?>) </td>
-				<td> <?php
+				<td align = "center"> <?php
 				if($row['TQF3']!="")
 				{
-					echo '<a href="TQF.php?CourseID='.$row["CourseID"].'&Section='.$row["Section"].'&Semester='.$row["Semester"].'&Curriculum='.$row["Curriculum"].'&Department='.$row["Department"].'&Faculty='.$row["Faculty"].'&Campus='.$row["Campus"].'&University='.$row["University"].'">Download</a>';
+					echo '<a href="TQF.php?SID='.$row["SID"].'"><img src="img/view_icon.png"></a>';
 				}
 				else
 				{
-					echo 'ไม่มี';
+					echo '<img src="img/no_tqf3_icon.png">';
 				}
 				?>
 				</td>
@@ -68,14 +69,14 @@
 				<td> <?php echo $row['Department']; ?> </td>
 				<td> <?php echo $row['Faculty']; ?> </td>
 				<td> <?php echo $row['University']; ?> (<?php echo $row['Campus']; ?>) </td>
-				<td> <?php
+				<td align = "center"> <?php
 					if($row['TQF3']!="")
 					{
-						echo '<a href="TQF.php?CourseID='.$row["CourseID"].'&Section='.$row["Section"].'&Semester='.$row["Semester"].'&Curriculum='.$row["Curriculum"].'&Department='.$row["Department"].'&Faculty='.$row["Faculty"].'&Campus='.$row["Campus"].'&University='.$row["University"].'">Download</a>';
+						echo '<a href="TQF.php?SID='.$row["SID"].'"><img src="img/view_icon.png"></a>';
 					}
 					else
 					{
-						echo 'ไม่มี';
+						echo '<img src="img/no_tqf3_icon.png">';
 					}
 					?>
 				</td>

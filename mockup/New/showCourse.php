@@ -1,4 +1,5 @@
 <meta charset='utf-8'>
+<script type="text/javascript" src="css/sortable.js"></script>
 <?php
 	require_once('function.php');
 	connectDB();
@@ -17,36 +18,35 @@
 	}
 	else
 	{
-		echo '<div align="center">
+		?>
+		<div align="center">
 			<br>
-				<table width="800" border=”1″>
-			<tr>
+			<table class="sortable" id="anyid" style="border-collapse: collapse" width="800" border=”1″>
+			<tr style="background:#999999; border:1px solid #000000;">
 			<td align = "center"><b>รหัสวิชา</b></td>
 			<td align = "center"><b>ชื่อวิชา</b></td>
 			<td align = "center"><b>กลุ่มที่</b></td>
-			<td align = "center"><b>มคอ.</b></td>
+			<td align = "center" class="unsortable"><b>มคอ.</b></td>
 			</tr>
 			
 			<tr>
-			<td align = "center">'.$row['CourseID'].'</a></td>
-			<td align = "center">'.$row['CourseName'].'</a></td>
-			<td align = "center">'.$row['Section'].'</td>
-			<td align = "center">';
+			<td align = "center"><?php echo $row['CourseID']; ?></a></td>
+			<td align = "center"><?php echo $row['CourseName']; ?></a></td>
+			<td align = "center"><?php echo $row['Section']; ?></td>
+			<td align = "center">
+		<?php
 				if($row['TQF3']!="")
 				{
-					echo '<a href="TQF.php?SID='.$row["SID"].'">Download</a>';
+					echo '<a href="TQF.php?SID='.$row["SID"].'"><img src="img/view_icon.png"></a>';
 				}
 				else
 				{
 				?>
-					<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
-							<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
-					</form>
-				<?php
-				}
-			echo '</td>
-			</tr>';
-			
+					<img src="img/no_tqf3_icon.png">
+				<?php } ?>
+			</td>
+			</tr>
+			<?php
 			while($row = mysql_fetch_array($result))
 			{
 				echo '<tr>
@@ -56,16 +56,13 @@
 					<td align = "center">';
 						if($row['TQF3']!="")
 						{
-							echo '<a href="TQF.php?SID='.$row["SID"].'">Download</a>';
+							echo '<a href="TQF.php?SID='.$row["SID"].'"><img src="img/view_icon.png"></a>';
 						}
 						else
 						{
 						?>
-							<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
-							<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
-					</form>
-						<?php
-						}
+							<img src="img/no_tqf3_icon.png">
+						<?php } 
 					echo '</td>
 					</tr>';
 			}

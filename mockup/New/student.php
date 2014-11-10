@@ -23,8 +23,8 @@
 					<td valign="top">
 	                	<div id="left">
 	                	<form method="GET">
-	        				<input name="btn1" class="btn-slide-bar" type="submit" value="ระเบียนประวัติ">
-                        	<input name="btn2" class="btn-slide-bar" type="submit" value="รายวิชาลงทะเบียน">
+	        				<input name="profile" class="btn-slide-bar" type="submit" value="ระเบียนประวัติ">
+                        	<input name="course" class="btn-slide-bar" type="submit" value="รายวิชาลงทะเบียน">
                         </form>
 	                    </div>
 	                    
@@ -42,9 +42,9 @@
 	                    				{
 	                    					include "student_profile.php";
 	                    				}
-	                    				else if(isset($_GET['btn2']))
+	                    				else if(isset($_GET['course']))
 	                    				{
-	                    					include "subject_registed.php";
+	                    					include "showCourse.php";
 	                    				}
 	                    			?>
 	                    		</div>

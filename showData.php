@@ -1,3 +1,4 @@
+<meta charset='utf-8'>
 <?php
 	require_once('function.php');
 	connectDB();
@@ -11,7 +12,7 @@
 	{
 		echo '<div align="center">
 			<br>
-				<table width="950" border=”1″>
+				<table class="sortable" id="anyid" width="950" border=”1″>
 			<tr height = "50">
 			<td align = "center"><b>รหัสวิชา</b></td>
 			<td align = "center"><b>ชื่อวิชา</b></td>
