@@ -34,7 +34,7 @@
 		<div style="margin-top:70px">
 			<div style="margin:200px auto">
 				<div align="center">
-					<img src = "..\..\image\logo2.png"> 
+					<img src = "image\logo2.png"> 
 				</div>
 
 				<div  align="center">

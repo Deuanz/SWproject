@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<nav id="nav-top" class="shadow">
-			<span style="display:inline-block; margin:5"><a href="about.php"><img src = "..\..\image\logo2-mini.png"></a></span>
+			<span style="display:inline-block; margin:5"><a href="about.php"><img src = "image\logo2-mini.png"></a></span>
 			<?php 
 				if(isset($_COOKIE['username'])){
 					require_once('logedin.php');
