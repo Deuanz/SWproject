@@ -1,14 +1,5 @@
 <meta charset='utf-8'>
-<script>
-	function GotPDF(data)
-	{
-		// Here, data contains "%PDF-1.4 ..." etc.
-		var datauri = 'data:application/pdf;base64,' + Base64.encode(data);
-		var win = window.open("", "Your PDF", "width=1024,height=768,resizable=yes,scrollbars=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no");
-		win.document.location.href = datauri;
-	}
-
-</script>
+<script type="text/javascript" src="css/sortable.js"></script>
 <?php
 	require_once('function.php');
 	connectDB();
@@ -27,32 +18,46 @@
 	}
 	else
 	{
-		echo '<div align="center">
+		?>
+		<div align="center">
 			<br>
-				<table width="800" border=”1″>
-			<tr>
+			<table class="sortable" id="anyid" style="border-collapse: collapse" width="800" border=”1″>
+			<tr style="background:#999999; border:1px solid #000000;">
 			<td align = "center"><b>รหัสวิชา</b></td>
 			<td align = "center"><b>ชื่อวิชา</b></td>
 			<td align = "center"><b>กลุ่มที่</b></td>
-			<td align = "center"><b>มคอ.</b></td>
+			<td align = "center" class="unsortable"><b>มคอ.</b></td>
+			<?php if($_COOKIE['role']=="0")
+			{
+					echo '<td align = "center" class="unsortable"><b>เพิ่ม มคอ.</b></td>';
+			}?>
 			</tr>
-			
 			<tr>
-			<td align = "center">'.$row['CourseID'].'</a></td>
-			<td align = "center">'.$row['CourseName'].'</a></td>
-			<td align = "center">'.$row['Section'].'</td>
-			<td align = "center">';
+			<td align = "center"><?php echo $row['CourseID']; ?></a></td>
+			<td align = "center"><?php echo $row['CourseName']; ?></a></td>
+			<td align = "center"><?php echo $row['Section']; ?></td>
+			<td align = "center">
+		<?php
 				if($row['TQF3']!="")
 				{
-					echo '<button name="view" value="btn_view" onClick="GotPDF('.$row['TQF3'].')"></button>';
+					echo '<a href="TQF.php?SID='.$row["SID"].'"><img src="img/view_icon.png"></a>';
 				}
 				else
 				{
-					echo 'ไม่มี มคอ.';
-				}
-			echo '</td>
-			</tr>';
-			
+				?>
+					<img src="img/no_tqf3_icon.png">
+				<?php } ?>
+			</td>
+			<?php if($_COOKIE['role']=="0")
+			{ ?>
+					<td align = "center">
+						<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
+								<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
+						</form>
+					</td>	
+			<?php } ?>
+			</tr>
+			<?php
 			while($row = mysql_fetch_array($result))
 			{
 				echo '<tr>
@@ -62,19 +67,27 @@
 					<td align = "center">';
 						if($row['TQF3']!="")
 						{
-							echo '<button name="view" value="btn_view" onClick="GotPDF('.$row['TQF3'].')"></button>';
+							echo '<a href="TQF.php?SID='.$row["SID"].'"><img src="img/view_icon.png"></a>';
 						}
 						else
 						{
-							echo '<a href="TQF.php?SID='.$row["SID"].'">เพิ่ม มคอ.</a>';
-						}
+						?>
+							<img src="img/no_tqf3_icon.png">
+						<?php } ?>
+					</td>
+					<?php if($_COOKIE['role']=="0")
+					{ ?>
+							<td align = "center">
+								<form action="addTQF.php?SID=<?php echo $row["SID"]; ?>&TQF=<?php echo "1"; ?>" method="POST" enctype="multipart/form-data">
+										<input type="file" name="upload" id="upload" onchange="this.form.submit()" />
+								</form>
+							</td>	
+					<?php } 
 					echo '</td>
 					</tr>';
 			}
 		echo'</div>';
 	}
 ?>
-		
-	
 		
 	

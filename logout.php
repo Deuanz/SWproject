@@ -1,6 +1,7 @@
 <?php 
-	setcookie("username", '', time() - 3600);
-	setcookie("role", '', time() - 3600);
+	//echo "Hello world";
+	setcookie("username", '', time() - 100000);
+	setcookie("role", '', time() - 10000);
 	header( "location: index.php" );
 	exit(0);
 ?>
