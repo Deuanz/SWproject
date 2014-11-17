@@ -30,7 +30,18 @@
 							$row = mysql_fetch_array($result);
 						?>
 						<font size=2 color="#fff">
-							<b><?php echo $row['Username'].'   '.$row['Fname'].'  '.$row['Lname'] ?></b>
+							<?php
+								if($username=="admin")
+								{
+									echo '<b>Admin</b>';
+								}
+								else
+								{
+									?>
+									<b><?php echo $row['Username'].'   '.$row['Fname'].'  '.$row['Lname'] ?></b>
+									<?php
+								}
+							?>
 						</font>
 					</div>
 

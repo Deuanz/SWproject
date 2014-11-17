@@ -5,7 +5,7 @@
 		<?php require_once('navbar.php'); ?>
 	</head>
 	<body>
-		<?php $isLogin = false ?>
+		<?php $isLogin = true ?>
 		<nav id="nav-top" class="shadow">
 			<span style="display:inline-block; margin:5"><a href="about.php"><img src = "image\logo2-mini.png"></a></span>
 			<?php 
@@ -44,7 +44,11 @@
 	                <td>
 	                	<div id="right">
 	                    	<div id="wrap">
-	                    		<div align="center" style="width:80%">เนื้อหา</div>
+	                    		<div align="center" style="width:650px">
+	                    			<?php
+	                    				include "comingsoon.php";
+	                    			?>
+	                    		</div>
 	                        </div>
 			            </div>
 	                   
